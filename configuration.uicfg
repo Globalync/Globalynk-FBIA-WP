@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Registration xmlns="http://schemas.microsoft.com/SqlServer/Management/Registration">
+
+  <ActionHandlers>
+
+    <ActionHandler>
+      <Moniker>ShowWizard</Moniker>
+      <Type>Microsoft.SqlServer.Configuration.UIExtension.ShowWizard, Microsoft.SqlServer.Configuration.UIExtension</Type>
+    </ActionHandler>
+
+  </ActionHandlers>
+
+  <Actions>
+
+    <Action>
+      <Moniker>InstallWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>InstallClusterWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>AddNode</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>RemoveNode</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>PrepareClusterWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>CompleteClusterWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+    <Action>
+      <Moniker>UninstallWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>UpgradeWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>ComponentUpdate</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>RepairWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>RunRulesUI</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>EditionUpgradeWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>PatchWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>RemovePatchWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>PrepareImageWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+    <Action>
+      <Moniker>CompleteImageWizard</Moniker>
+      <ActionHandlerMoniker>ShowWizard</ActionHandlerMoniker>
+      <Properties>
+        <Property>
+          <Name>FormType</Name>
+          <Value>Microsoft.SqlServer.Configuration.InstallWizardFramework.InstallWizard, Microsoft.SqlServer.Configuration.InstallWizardFramework</Value>
+        </Property>
+      </Properties>
+    </Action>
+
+
+  </Actions>
+</Registration>

@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8" ?><xml><Authentication Name="globalynk" Mode="Intro" DisplayLayout="Icons"><Provider DisplayOrder="3" Enabled="True" Type="OpenID" /><DataPageAuth DisplayOrder="5" HeaderRichUI="False" FooterRichUI="False" Enabled="False" AutoFocusInFirstField="True" SessionTimeout="120" /><Note /></Authentication></xml>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+    <Page
+      ID="PIDValidation">
+      <Title ResourceID="PIDValidationTitle"></Title>
+      <Subtitle  ResourceID="EditionUpgradePIDValidationSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.RequiresEditionUpgradeScenarioAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PidValidationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="EULAPid" PageType="Page" >
+      <Title ResourceID="EULAPidTitle"></Title>
+      <Subtitle ResourceID="EULAPidSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.RequiresEditionUpgradeScenarioAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="RunRules">
+      <Title ResourceID="SystemConfigurationCheckTitle"></Title>
+      <Subtitle ResourceID="SystemConfigurationCheckSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunStandaloneRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+    </Page>
+    <Page
+    ID="RunGlobalRules">
+      <Title ResourceID="EditionUpgradeScenarioGlobalRulesTitle"></Title>
+      <Subtitle ResourceID="ScenarioGlobalRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunScenarioGlobalRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+    </Page>
+
+    <Page
+      ID="InstanceSelection">
+      <Title ResourceID="InstanceSelectionTitle"></Title>
+      <Subtitle ResourceID="InstanceSelectionSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstanceSelectionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <PageLeftEmbeddedAction>CALCULATESCENARIO</PageLeftEmbeddedAction>
+    </Page>
+
+    <Page
+      ID="RunEditionUpgradeRules">
+      <Title ResourceID="FeatureRulesTitle"></Title>
+      <Subtitle ResourceID="RunEditionUpgradeRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunFeatureSpecificRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+    </Page>
+
+    <Page
+      ID="Summary" PageType="InPlaceProgress">
+      <Title ResourceID="EditionUpgradeSummaryTitle"></Title>
+      <Subtitle ResourceID="EditionUpgradeSummarySubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Next">
+          <Text ResourceID="UpgradeButton"></Text>
+        </Button>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SummaryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="EditionUpgradeComplete" PageType="Finish" >
+      <Title ResourceID="EditionUpgradeCompleteTitle"></Title>
+      <Subtitle ResourceID="EditionUpgradeCompleteSubTitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false"/>
+        <Button ID="Next" Visible ="false"/>
+        <Button ID="Cancel">
+          <Text ResourceID="CloseButton"></Text>
+        </Button>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PostInstallController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="EditionUpgradeWizardTitle"></Title>
+    <Icon>
+      <Name>Upgrade</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>
+    <ButtonDefaults>
+      <Button ID="Help" Enabled="false" Visible="false"/>
+    </ButtonDefaults>
+  </Appearance>
+</UIHost>

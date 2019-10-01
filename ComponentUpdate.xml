@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+
+    <Page
+      ID="PIDValidation">
+      <Title ResourceID="PIDValidationTitle"></Title>
+      <Subtitle  ResourceID="PIDValidationSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.CuPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PidValidationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="EULAPid" PageType="Page" >
+      <Title ResourceID="EULAPidTitle"></Title>
+      <Subtitle ResourceID="EULAPidSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.CuEulaVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+    
+    <Page
+      ID="ProductUpdate" PageType="Page">
+      <Title ResourceID="ProductUpdateTitle"></Title>
+      <Subtitle ResourceID="ProductUpdateSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ProductUpdateController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="InstallSetupFiles" PageType="Progress">
+      <Title ResourceID="InstallSetupTitle"></Title>
+      <Subtitle ResourceID="InstallSetupSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>		  
+        <Button ID="Next" Enabled="true">
+          <Text ResourceID="InstallButton"></Text>
+        </Button>
+        <Button ID="Back" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstallSetupProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="InstallWizardTitle"></Title>
+    <Icon>
+      <Name>Install</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>
+    <ButtonDefaults>
+      <Button ID="Help" Enabled="false" Visible="false"/>
+    </ButtonDefaults>    
+  </Appearance>
+</UIHost>

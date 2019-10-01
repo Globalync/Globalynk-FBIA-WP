@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UIHost xmlns="http://schemas.microsoft.com/sqlserver/setup/uihost.xsd" ResourceManager="Microsoft.SqlServer.Configuration.InstallWizard.SR, Microsoft.SqlServer.Configuration.InstallWizard">
+  <Pages>
+    <Page
+      ID="PIDValidation">
+      <Title ResourceID="PIDValidationTitle"></Title>
+      <Subtitle  ResourceID="PIDValidationSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.CuPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PidValidationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>      
+    </Page>
+
+    <Page
+      ID="EULAPid" PageType="Page" >
+      <Title ResourceID="EULAPidTitle"></Title>
+      <Subtitle ResourceID="EULAPidSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.CuEulaVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>      
+    </Page>
+
+    <Page
+    ID="RunRules">
+      <Title ResourceID="SystemConfigurationCheckTitle"></Title>
+      <Subtitle ResourceID="SystemConfigurationCheckSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunStandaloneRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+    </Page>
+
+    <Page
+      ID="MicrosoftUpdateOptIn" PageType="Page" >
+      <Title ResourceID="MuTitle"></Title>
+      <Subtitle ResourceID="MuSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.MicrosoftUpdateOptInController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="ProductUpdate" PageType="Page">
+      <Title ResourceID="ProductUpdateTitle"></Title>
+      <Subtitle ResourceID="ProductUpdateSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.HideForUnavailableMediaAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ProductUpdateController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="InstallSetupFiles" PageType="Progress">
+      <Title ResourceID="InstallSetupTitle"></Title>
+      <Subtitle ResourceID="InstallSetupSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.HideForUnavailableMediaAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Visible="true" Enabled="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.InstallSetupProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+    <Page
+      ID="RunGlobalRules">
+      <Title ResourceID="AddNodeScenarioGlobalRulesTitle"></Title>
+      <Subtitle ResourceID="ScenarioGlobalRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunScenarioGlobalRuleDisableBackProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+    </Page>
+    
+    <Page
+      ID="PIDValidation2">
+      <Title ResourceID="PIDValidationTitle"></Title>
+      <Subtitle  ResourceID="PIDValidationSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.EulaPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PidValidationController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="EULAPid2" PageType="Page" >
+      <Title ResourceID="EULAPidTitle"></Title>
+      <Subtitle ResourceID="EULAPidSubtitle"></Subtitle>
+      <VisibleAttributes>
+        <TypeName>Microsoft.SqlServer.Configuration.InstallWizardFramework.EulaPidVisibleAttribute, Microsoft.SqlServer.Configuration.InstallWizardFramework</TypeName>
+      </VisibleAttributes>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Next" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.EULAPidController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="SelectInstanceForAdd">
+      <Title ResourceID="ClusterNodeConfiguration"></Title>
+      <Subtitle ResourceID="ClusterNodeConfigurationAddNodeSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ClusterSelectInstanceController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <PageLeftEmbeddedAction>CalculateCurrentClusterSupportedIPAddresses</PageLeftEmbeddedAction>
+    </Page>
+  
+    <Page
+      ID="NetworkSelection" PageType="Page" >
+      <Title ResourceID="ClusterNetworkSelectionTitle"></Title>
+      <Subtitle ResourceID="ClusterAddNodeNetworkSelectionSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <BlockNavigationOnValidationWarning>true</BlockNavigationOnValidationWarning>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ClusterNetworkSelectionController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <PageLeftEmbeddedAction>CalculateClusterSelectedIPAddressResources</PageLeftEmbeddedAction>
+    </Page>
+
+    <Page
+      ID="ServiceConfiguration">
+      <Title ResourceID="ServiceConfigurationTitle"></Title>
+      <Subtitle ResourceID="ServerConfigurationSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ServicesController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+ 
+    <Page
+    ID="RunSpecificSKUClusteredNodesRules">
+      <Title ResourceID="FeatureRulesTitle"></Title>
+      <Subtitle ResourceID="RunAddNodeRulesSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Enabled="false"/>
+        <Button ID="Next" Enabled="false"/>
+        <Button ID="Cancel" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.RunFeatureSpecificRuleProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+      <LoadDataOnForwardNavigationOnly>true</LoadDataOnForwardNavigationOnly>
+    </Page>
+
+    <Page
+      ID="Summary" PageType="Summary">
+      <Title ResourceID="InstallClusterNodeSummaryTitle"></Title>
+      <Subtitle ResourceID="InstallClusterNodeSummarySubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Next">
+          <Text ResourceID="InstallButton"></Text>
+        </Button>
+        <Button ID="Finish" Visible="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.SummaryController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="InstallationProgressPage"  PageType="Progress">
+      <Title ResourceID="InstallClusterNodeProgressTitle"></Title>
+      <Subtitle></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false "/>
+        <Button ID="Next" Visible ="true" Enabled="false"/>
+        <Button ID="Cancel" Visible="true" Enabled="false"/>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.ExecutionProgressController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+
+    <Page
+      ID="PostInstall" PageType="Finish" >
+      <Title ResourceID="PostUpgradeTitle"></Title>
+      <Subtitle ResourceID="InstallClusterNodeFinishSubtitle"></Subtitle>
+      <Buttons>
+        <Button ID="Finish" Visible="false"/>
+        <Button ID="Back" Visible ="false"/>
+        <Button ID="Next" Visible ="false"/>
+        <Button ID="Cancel">
+          <Text ResourceID="CloseButton"></Text>
+        </Button>
+      </Buttons>
+      <ControllerType>Microsoft.SqlServer.Configuration.InstallWizard.PostInstallController, Microsoft.SqlServer.Configuration.InstallWizard</ControllerType>
+    </Page>
+  </Pages>
+
+  <Appearance>
+    <Title ResourceID="InstallClusterNodeWizardTitle"></Title>
+    <Icon>
+      <Name>AddNode</Name>
+      <ResourceType>Microsoft.SqlServer.Configuration.InstallWizard.Resources, Microsoft.SqlServer.Configuration.InstallWizard</ResourceType>
+    </Icon>
+    <ButtonDefaults>
+      <Button ID="Help" Enabled="false" Visible="false"/>
+    </ButtonDefaults>  
+  </Appearance>
+</UIHost>
