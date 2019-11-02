@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BridgePackage>
+  <App Name="Application1" Version="1.0" GUID="AP43DC427B80E44623A9F75EABFA6F7C917E251E54566000000C001E00005456600000010000100000000000000000000000000000000000000000000000000000000000000000C1" Description="" FullApp="True" DataPackage="True" BridgeVersionCreated="12.3" BridgeVersionChanged="" ObjectDateCreated="2018-05-29T21:08:38" ObjectDateChanged="" ExportFormat="Custom" DistributionMode="Standard" AuthorID="54566000">
+    <AppObjects>
+      <Object Type="IN" GUID="AUA5BBF30526904001B211C71FF207F4307E251E54566000000C001E000054566000000100001000000000000000000000000000000000000000000000000000000000000000005F" Name="globalynk" AppInitialSignature="5456600000010000" ObjectInitialSignature="5456600000010000" ObjectDateAdded="" BridgeVersionCreated="12.3" BridgeVersionChanged="" ObjectDateCreated="2018-05-30T04:08:25" ObjectDateChanged="" DefaultImportAction="NEW" File="globalynk_2018-May-30_0408.xml" />
+    </AppObjects>
+  </App>
+</BridgePackage>
