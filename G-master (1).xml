@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<MsixPackagingToolTemplate xmlns="http://schemas.microsoft.com/appx/msixpackagingtool/template/2018">
+  <Settings AllowTelemetry="true" ApplyAllPrepareComputerFixes="false" GenerateCommandLineFile="true" AllowPromptForPassword="false" EnforceMicrosoftStoreVersioningRequirements="false" p4:ServerPortNumber="1599" xmlns:p4="http://schemas.microsoft.com/msix/msixpackagingtool/template/1904" />
+  <PrepareComputer DisableWindowsSearchService="false" />
+  <SaveLocation PackagePath="C:\Users\hadmars\Desktop\Globalynk_1.0.0.0_x64__1bzj9v07regq6.msix" TemplatePath="C:\Users\hadmars\Desktop\Globalynk_1.0.0.0_x64__1bzj9v07regq6_template.xml" />
+  <Installer InstallLocation="" />
+  <PackageInformation PackageName="Globalynk" PackageDisplayName="Globalynk V1.0" PublisherName="CN=Globalync" PublisherDisplayName="Globalync Pty Ltd" Version="1.0.0.0" MainPackageNameForModificationPackage="Globalynk" />
+</MsixPackagingToolTemplate>
