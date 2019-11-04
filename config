@@ -5,10 +5,8 @@
 	logallrefupdates = true
 	symlinks = false
 	ignorecase = true
-[submodule]
-	active = .
 [remote "origin"]
-	url = https://globalync-1.visualstudio.com/Globalynk/_git/Globalynk
+	url = https://github.com/Globalynk/Globalynk.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin
